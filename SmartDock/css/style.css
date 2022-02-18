@@ -1,0 +1,188 @@
+body{
+  background: #111;
+  font-family: Arial;
+  user-select: none;
+  overflow: hidden;
+}
+
+.widget{
+  position: absolute !important;
+  border-radius: 15px;
+  cursor: pointer;
+  background: #222;
+  transition: transform 100ms ease-in-out, top 500ms ease-in-out, left 500ms ease-in-out;
+}
+
+.widget:active{
+  transform: scale(1.1);
+}
+
+.ui-draggable-dragging{
+  transition: none;
+}
+
+#timeWidget{
+  position: absolute;
+  text-align: center;
+  font-size: 75px;
+  line-height: 200px;
+  color: #999;
+}
+
+#dateWidget{
+  position: absolute;
+  text-align: center;
+  font-size: 75px;
+  color: white;
+}
+
+#weatherWidget{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  text-align: center;
+  font-size: 75px;
+  color: white;
+  padding: 20px;
+}
+
+
+
+#weatherWidget #cWrap #city{
+  font-size: 20px;
+}
+
+#weatherWidget #icon{
+  width: 150px;
+  height: 150px;
+  flex-flow: row;
+}
+
+#weatherWidget #cWrap #condition{
+  font-size: 15px;
+  color: #999;
+}
+
+#weatherWidget #cWrap #humidity{
+  font-size: 15px;
+  color: #999;
+}
+
+#weatherWidget #cWrap{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: left;
+}
+
+#weatherWidget #tWrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-direction: column;
+}
+
+#weatherWidget #tWrap #temp{
+  font-size: 70px;
+}
+
+#classWidget{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+#classWidget #title{
+  font-size: 25px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+#classWidget #nextClass{
+  font-size: 20px;
+  color: #999;
+}
+
+#classWidget #duration{
+  font-size: 20px;
+  color: #999;
+}
+
+#classWidget #img{
+  width: 150px;
+  height: 150px;
+}
+
+#factWidget{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+#factWidget #factTitle{
+  position: absolute;
+  top: 10px;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+#factWidget #fact{
+  font-size: 20px;
+  text-align: center;
+  width: 400px;
+  color: #999;
+}
+
+#foodWidget{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#foodWidget #foodTitle{
+  color: white;
+  font-size: 25px;
+  margin-top: 0px;
+}
+
+#foodWidget span{
+  color: #999;
+  margin-left: 10px;
+}
+
+#foodPlace{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 20px;
+  color: white;
+  margin-top: 20px;
+}
+
+#dot{
+  width: 15px;
+  height: 15px;
+  background: #ff6b6b;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+#month{
+  color: #999;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+#day{
+  line-height: 140px;
+}
