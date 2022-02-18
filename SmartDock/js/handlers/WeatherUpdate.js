@@ -1,7 +1,7 @@
 // Fetch Weather
 
 function getWeather(cityID) {
-var key = 'insert_your_key_here';
+var key = 'insert_your_key_here'; // Changed from original so no one takes my API key
 fetch('https://api.openweathermap.org/data/2.5/weather?id=' + cityID+ '&appid=' + key)
 .then(function(resp) { return resp.json() }) // Convert data to json
 .then(function(data) {
